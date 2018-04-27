@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>多窗口邮件系统</title>
+    <link rel="stylesheet" href="./icon.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h2>多窗口邮件阅读系统</h2>
+            <p>纯css编写，应用css3动画，flex布局</p>
+        </div>
+        <div class="container">
+            <div class="header">
+                <div class="mail-number">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinfeng"></use>
+                    </svg>
+                </div>
+                <h3>Mail Reader</h3>
+                <div class="menu">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-menu"></use>
+                    </svg>
+                </div>
+            </div>
+            <input type="checkbox" id="message_1">
+            <label for="message_1" class="message_wrapper">
+                <div class="message">
+                    <div class="image">
+                        <img src="./img/1.jpg" alt="" width="75" height="75">
+                        <div class="read">
+                             <span>Read</span>
+                        </div>
+                    </div>
+                    <div class="reading">
+                        <span>Now Reading</span>
+                    </div>
+                    <div class="message_item">
+                        <h4>已读</h4>
+                        <p>SUBJ:Thanks,you are amazing</p>
+                    </div>
+                </div>
+                <div class="message_expand">
+                    <div class="expand_header">
+                        <img src="./img/1.jpg" alt="" width="40" height="40">
+                        <div>
+                            <h4>已读</h4>
+                            <p>SUBJ:Thanks,you are amazing</p>
+                        </div>
+                    </div>
+                    <div class="expand_body">
+                        <div>
+                            <h4>Email text</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer mollis convallis quam, vel dignissim ligula rutrum in.<br>
+                                Pellentesque ut purus porta, gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expand_footer">
+                        <span>Reply:</span>
+                        <textarea name="" id="" cols="" rows=""></textarea>
+                    </div>
+                </div>
+            </label>
+            <input type="checkbox" id="message_2">
+            <label for="message_2" class="message_wrapper">
+                <div class="message">
+                    <div class="image">
+                        <img src="./img/2.jpg" alt="" width="75" height="75">
+                        <div class="read">
+                             <span>Read</span>
+                        </div>
+                    </div>
+                    <div class="reading">
+                        <span>Now Reading</span>
+                    </div>
+                    <div class="message_item">
+                        <h4>已读</h4>
+                        <p>SUBJ:Thanks,you are amazing</p>
+                    </div>
+                </div>
+                <div class="message_expand">
+                    <div class="expand_header">
+                        <img src="./img/2.jpg" alt="" width="40" height="40">
+                        <div>
+                            <h4>已读</h4>
+                            <p>SUBJ:Thanks,you are amazing</p>
+                        </div>
+                    </div>
+                    <div class="expand_body">
+                        <div>
+                            <h4>Email text</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer mollis convallis quam, vel dignissim ligula rutrum in.<br>
+                                Pellentesque ut purus porta, gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expand_footer">
+                        <span>Reply:</span>
+                        <textarea name="" id="" cols="" rows=""></textarea>
+                    </div>
+                </div>
+            </label>
+            <input type="checkbox" id="message_3">
+            <label for="message_3" class="message_wrapper">
+                <div class="message">
+                    <div class="unRead_image">
+                        <img src="./img/3.jpg" alt="" width="75" height="75">
+                        <div class="unRead">
+                             <span>Unread</span>
+                        </div>
+                    </div>
+                    <div class="reading">
+                        <span>Now Reading</span>
+                    </div>
+                    <div class="message_item">
+                        <h4 class="message_item_unread">未读</h4>
+                        <p>SUBJ:Thanks,you are amazing</p>
+                    </div>
+                </div>
+                <div class="message_expand">
+                    <div class="expand_header">
+                        <img src="./img/3.jpg" alt="" width="40" height="40">
+                        <div>
+                            <h4>已读</h4>
+                            <p>SUBJ:Thanks,you are amazing</p>
+                        </div>
+                    </div>
+                    <div class="expand_body">
+                        <div>
+                            <h4>Email text</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer mollis convallis quam, vel dignissim ligula rutrum in.<br>
+                                Pellentesque ut purus porta, gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expand_footer">
+                        <span>Reply:</span>
+                        <textarea name="" id="" cols="" rows=""></textarea>
+                    </div>
+                </div>
+            </label>
+            <input type="checkbox" id="message_4">
+            <label for="message_4" class="message_wrapper">
+                <div class="message">
+                    <div class="unRead_image">
+                        <img src="./img/4.jpg" alt="" width="75" height="75">
+                        <div class="unRead">
+                             <span>Unread</span>
+                        </div>
+                    </div>
+                    <div class="reading">
+                        <span>Now Reading</span>
+                    </div>
+                    <div class="message_item">
+                        <h4 class="message_item_unread">未读</h4>
+                        <p>SUBJ:Thanks,you are amazing</p>
+                    </div>
+                </div>
+                <div class="message_expand">
+                    <div class="expand_header">
+                        <img src="./img/4.jpg" alt="" width="40" height="40">
+                        <div>
+                            <h4>已读</h4>
+                            <p>SUBJ:Thanks,you are amazing</p>
+                        </div>
+                    </div>
+                    <div class="expand_body">
+                        <div>
+                            <h4>Email text</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer mollis convallis quam, vel dignissim ligula rutrum in.<br>
+                                Pellentesque ut purus porta, gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expand_footer">
+                        <span>Reply:</span>
+                        <textarea name="" id="" cols="" rows=""></textarea>
+                    </div>
+                </div>
+            </label>
+            <input type="checkbox" id="message_5">
+            <label for="message_5" class="message_wrapper">
+                <div class="message">
+                    <div class="image">
+                        <img src="./img/5.jpg" alt="" width="75" height="75">
+                        <div class="read">
+                             <span>Read</span>
+                        </div>
+                    </div>
+                    <div class="reading">
+                        <span>Now Reading</span>
+                    </div>
+                    <div class="message_item">
+                        <h4>已读</h4>
+                        <p>SUBJ:Thanks,you are amazing</p>
+                    </div>
+                </div>
+                <div class="message_expand">
+                    <div class="expand_header">
+                        <img src="./img/5.jpg" alt="" width="40" height="40">
+                        <div>
+                            <h4>已读</h4>
+                            <p>SUBJ:Thanks,you are amazing</p>
+                        </div>
+                    </div>
+                    <div class="expand_body">
+                        <div>
+                            <h4>Email text</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer mollis convallis quam, vel dignissim ligula rutrum in.<br>
+                                Pellentesque ut purus porta, gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expand_footer">
+                        <span>Reply:</span>
+                        <textarea name="" id="" cols="" rows=""></textarea>
+                    </div>
+                </div>
+            </label>
+            <input type="checkbox" id="message_6">
+            <label for="message_6" class="message_wrapper">
+                <div class="message">
+                    <div class="unRead_image">
+                        <img src="./img/6.jpg" alt="" width="75" height="75">
+                        <div class="unRead">
+                             <span>Unread</span>
+                        </div>
+                    </div>
+                    <div class="reading">
+                        <span>Now Reading</span>
+                    </div>
+                    <div class="message_item">
+                        <h4 class="message_item_unread">未读</h4>
+                        <p>SUBJ:Thanks,you are amazing</p>
+                    </div>
+                </div>
+                <div class="message_expand">
+                    <div class="expand_header">
+                        <img src="./img/6.jpg" alt="" width="40" height="40">
+                        <div>
+                            <h4>已读</h4>
+                            <p>SUBJ:Thanks,you are amazing</p>
+                        </div>
+                    </div>
+                    <div class="expand_body">
+                        <div>
+                            <h4>Email text</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer mollis convallis quam, vel dignissim ligula rutrum in.<br>
+                                Pellentesque ut purus porta, gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expand_footer">
+                        <span>Reply:</span>
+                        <textarea name="" id="" cols="" rows=""></textarea>
+                    </div>
+                </div>
+            </label>
+            <input type="checkbox" id="message_7">
+            <label for="message_7" class="message_wrapper">
+                <div class="message">
+                    <div class="image">
+                        <img src="./img/7.jpg" alt="" width="75" height="75">
+                        <div class="read">
+                             <span>Read</span>
+                        </div>
+                    </div>
+                    <div class="reading">
+                        <span>Now Reading</span>
+                    </div>
+                    <div class="message_item">
+                        <h4>已读</h4>
+                        <p>SUBJ:Thanks,you are amazing</p>
+                    </div>
+                </div>
+                <div class="message_expand">
+                    <div class="expand_header">
+                        <img src="./img/7.jpg" alt="" width="40" height="40">
+                        <div>
+                            <h4>已读</h4>
+                            <p>SUBJ:Thanks,you are amazing</p>
+                        </div>
+                    </div>
+                    <div class="expand_body">
+                        <div>
+                            <h4>Email text</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et commodo ipsum, ut rhoncus velit. Nullam placerat, ipsum sed pretium varius, magna metus ullamcorper magna, at porta quam libero ut est. Mauris cursus in magna in fermentum. Integer mollis convallis quam, vel dignissim ligula rutrum in.<br>
+                                Pellentesque ut purus porta, gravida tellus et, consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque egestas convallis urna...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="expand_footer">
+                        <span>Reply:</span>
+                        <textarea name="" id="" cols="" rows=""></textarea>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+<script src="//at.alicdn.com/t/font_640948_mrt3ulz8hrsk0529.js"></script>
+</body>
+</html>
